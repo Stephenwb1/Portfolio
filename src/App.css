@@ -1,3 +1,13 @@
+@import "tailwindcss";
+@font-face{
+  font-family: 'Starcraft';
+  src: url('./assets/fonts/starcraft_font10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@theme {
+  --font-starcraft: 'Starcraft', sans-serif;
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;

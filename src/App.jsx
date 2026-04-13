@@ -15,9 +15,21 @@ function App() {
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+        <div style={{ position: 'relaive' }}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -1}}
+          >
+            <source src="bwmenu.mp4" type="video/mp4" />
+          </video>
+        </div>
+
         <div>
-          <h1>Get started</h1>
-          <p>
+          <h1 className="font-starcraft">Get started</h1>
+          <p className="font-starcraft">
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
