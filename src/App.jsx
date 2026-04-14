@@ -93,6 +93,47 @@ function App() {
       </video>
 
       <div
+        style={{
+          position: "fixed",
+          top: "11.7%",
+          left: "60.82%",
+          width: "615px",
+          height: "615px",
+          display: "flex",
+          flexDirection: "column",
+          padding: "20px",
+          gap: "16px",
+          overflow: "hidden",
+        }}
+      >
+        <h1
+          className="font-starcraft_normal"
+          style={{ fontSize: "83px", alignSelf: "center", margin: 35 }}
+        >
+          STEPHEN
+        </h1>
+        <h2
+          className="font-starcraft"
+          style={{
+            color: "rgba(255,255,255,1)",
+            fontSize: "26px",
+            alignSelf: "center",
+            margin: "-10px",
+            letterSpacing: "15px",
+          }}
+        >
+          WEND-BELL
+        </h2>
+        <div style={{ marginTop: 55 }}>
+          <p>Languages & Technologies</p>
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
         onMouseEnter={handleMouseEnter(setHovered1)}
         onMouseLeave={handleMouseLeave(setHovered1)}
         style={{
