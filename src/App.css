@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @font-face{
   font-family: 'Starcraft';
-  src: url('./assets/fonts/MicrogrammaDExtendedMedium.otf') format('opentype');
+  src: url('./assets/fonts/eurogramma.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
