@@ -1,14 +1,23 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import "./App.css";
 
 function App() {
+  const location = useLocation();
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
-    </Routes>
+    <>
+      <div style={{ display: location.pathname === "/" ? "block" : "none" }}>
+        <Home />
+      </div>
+      <div
+        style={{
+          display: location.pathname === "/projects" ? "block" : "none",
+        }}
+      >
+        <Projects />
+      </div>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 
@@ -11,6 +11,18 @@ function Projects() {
   const [scale, setScale] = useState(
     Math.max(window.innerWidth / 2560, window.innerHeight / 1440),
   );
+
+  // for beginning video
+  const location = useLocation();
+  const entryVideoRef = useRef(null);
+
+  useEffect(() => {
+    if (location.pathname === "/projects") {
+      setLeaving(false);
+      entryVideoRef.current.currentTime = 0;
+      entryVideoRef.current.play();
+    }
+  }, [location.pathname]);
 
   //for canvas
   useEffect(() => {
@@ -93,7 +105,7 @@ function Projects() {
 
       {/* Forward and backward transition videos */}
       <video
-        autoPlay
+        ref={entryVideoRef}
         muted
         playsInline
         onEnded={() => setDisplayCards(true)}
