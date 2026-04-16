@@ -88,6 +88,20 @@ function Home() {
         >
           <source src="/sat_hover3.webm" type="video/webm" />
         </video>
+        <p
+          className="font-starcraft"
+          style={{
+            position: "absolute",
+            top: "67%",
+            left: "66%",
+            fontSize: "48px",
+            textShadow: "0 6px 0px rgba(0,0,0,0.9)",
+            color: isHovered2 ? "#B5EE71" : "#60D632",
+            zIndex: 2,
+          }}
+        >
+          <span style={{ color: "#B5EE71" }}>C</span>ontact me
+        </p>
         <video
           autoPlay
           loop
@@ -107,6 +121,20 @@ function Home() {
         >
           <source src="/black_hole_hover.webm" type="video/webm" />
         </video>
+        <p
+          className="font-starcraft"
+          style={{
+            position: "absolute",
+            top: "24%",
+            left: "29.5%",
+            fontSize: "48px",
+            textShadow: "0 6px 0px rgba(0,0,0,0.9)",
+            color: isHovered3 ? "#B5EE71" : "#60D632",
+            zIndex: 2,
+          }}
+        >
+          <span style={{ color: "#B5EE71" }}>C</span>ertifications
+        </p>
         <video
           autoPlay
           loop
