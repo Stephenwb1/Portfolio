@@ -61,7 +61,7 @@ function Home() {
             zIndex: -1,
           }}
         >
-          <source src="bwmenu_1.mp4" type="video/mp4" />
+          <source src="bwmenu_2.mp4" type="video/mp4" />
         </video>
         <p
           className="font-starcraft"
