@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/projects";
 
 function Home() {
   const navigate = useNavigate();
@@ -162,13 +164,14 @@ function Home() {
           <source src="/ships_hover.webm" type="video/webm" />
         </video>
 
+        {/* Canvas on right side, name and recent project */}
         <div
           style={{
             position: "absolute",
             top: "11.7%",
             left: "60.82%",
             width: "615px",
-            height: "615px",
+            height: "650px",
             display: "flex",
             flexDirection: "column",
             padding: "20px",
@@ -194,18 +197,18 @@ function Home() {
           >
             WEND-BELL
           </h2>
-          <div style={{ marginTop: 55 }}>
-            <p>Languages & Technologies</p>
-            <ul>
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>I think here I want to put more recent projects actually</li>
-              <li>
-                Find a component that like pulls my recent projects? from
-                readme?
-              </li>
-            </ul>
-          </div>
+          <ProjectCard
+            {...projects[3]}
+            titleStyle={{ top: "38%", left: "0%" }}
+            githubStyle={{ top: "48%", left: "0%" }}
+            videoStyle={{
+              top: "65%",
+              left: "20%",
+              width: "363px",
+              height: "218px",
+            }}
+            descStyle={{ top: "55%", left: "0%" }}
+          />
         </div>
 
         {/* bottom left links */}
@@ -226,7 +229,7 @@ function Home() {
               position: "absolute",
               fontSize: "48px",
               textShadow: "0 6px 0px rgba(0,0,0,0.9)",
-              color: isHovered3 ? "#B6EE71" : "#60D632",
+              color: "#60D632",
               zIndex: 2,
               listStyle: "none",
               padding: 0,
@@ -244,7 +247,13 @@ function Home() {
                 cursor: "pointer",
               }}
             >
-              <span style={{ color: "#B5EE71" }}>R</span>esume
+              <a
+                href="/resumes/Wend_Bell_Stephen_Resume_SWE_V4.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ color: "#B5EE71" }}>R</span>esume
+              </a>
             </li>
             <li
               onMouseEnter={() => setHoveredGithub(true)}
@@ -254,7 +263,13 @@ function Home() {
                 cursor: "pointer",
               }}
             >
-              <span style={{ color: "#B5EE71" }}>G</span>ithub
+              <a
+                href="https://github.com/Stephenwb1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ color: "#B5EE71" }}>G</span>ithub
+              </a>
             </li>
             <li
               onMouseEnter={() => setHoveredLinkedin(true)}
@@ -264,7 +279,13 @@ function Home() {
                 cursor: "pointer",
               }}
             >
-              <span style={{ color: "#B5EE71" }}>L</span>inkedin
+              <a
+                href="https://www.linkedin.com/in/stephen-wend-bell-9b27b611a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span style={{ color: "#B5EE71" }}>L</span>inkedin
+              </a>
             </li>
             <li>
               <span style={{ color: "#B5EE71" }}>9</span>16-248-3606
