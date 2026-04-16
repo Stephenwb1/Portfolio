@@ -100,6 +100,43 @@ function Projects() {
             }}
             descStyle={{ top: "840px", left: "1480px" }}
           />
+          {/* Ok and Back buttons */}
+          <p
+            className="font-starcraft"
+            style={{
+              userSelect: "none",
+              position: "absolute",
+              top: "79%",
+              left: "72%",
+              fontSize: "48px",
+              textShadow: "0 6px 0px rgba(0,0,0,0.9)",
+              color: "#60D632",
+              zIndex: 2,
+              pointerEvents: "none",
+            }}
+          >
+            <span style={{ color: "#B5EE71" }}>O</span>k
+          </p>
+          <p
+            onClick={() => {
+              setLeaving(true);
+              setDisplayCards(false);
+              reverseVideoRef.current?.play();
+            }}
+            className="font-starcraft"
+            style={{
+              userSelect: "none",
+              position: "absolute",
+              top: "86.2%",
+              left: "73%",
+              fontSize: "48px",
+              textShadow: "0 6px 0px rgba(0,0,0,0.9)",
+              color: "#60D632",
+              zIndex: 2,
+            }}
+          >
+            <span style={{ color: "#B5EE71" }}>B</span>ack
+          </p>
         </div>
       )}
 

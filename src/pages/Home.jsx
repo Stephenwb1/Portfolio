@@ -201,6 +201,18 @@ function Home() {
           >
             WEND-BELL
           </h2>
+          <h2
+            className="font-starcraft"
+            style={{
+              color: "rgba(255,255,255,1)",
+              fontSize: "18px",
+              alignSelf: "center",
+              margin: "35px",
+            }}
+          >
+            Currently working on:
+          </h2>
+
           <ProjectCard
             {...projects[3]}
             titleStyle={{ top: "38%", left: "0%" }}
