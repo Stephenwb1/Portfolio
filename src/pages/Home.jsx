@@ -7,6 +7,10 @@ function Home() {
   const [isHovered1, setHovered1] = useState(false);
   const [isHovered2, setHovered2] = useState(false);
   const [isHovered3, setHovered3] = useState(false);
+  const [isHoveredResume, setHoveredResume] = useState(false);
+  const [isHoveredGithub, setHoveredGithub] = useState(false);
+  const [isHoveredLinkedin, setHoveredLinkedin] = useState(false);
+
   const [scale, setScale] = useState(
     Math.max(window.innerWidth / 2560, window.innerHeight / 1440),
   );
@@ -28,6 +32,7 @@ function Home() {
 
   return (
     <>
+      {/* Hover animations and Text */}
       <div
         style={{
           position: "fixed",
@@ -64,6 +69,7 @@ function Home() {
             fontSize: "48px",
             textShadow: "0 6px 0px rgba(0,0,0,0.9)",
             color: isHovered1 ? "#B5EE71" : "#60D632",
+            pointerEvents: "none",
           }}
         >
           <span style={{ color: "#B5EE71" }}>M</span>y projects
@@ -97,7 +103,7 @@ function Home() {
             fontSize: "48px",
             textShadow: "0 6px 0px rgba(0,0,0,0.9)",
             color: isHovered2 ? "#B5EE71" : "#60D632",
-            zIndex: 2,
+            pointerEvents: "none",
           }}
         >
           <span style={{ color: "#B5EE71" }}>C</span>ontact me
@@ -124,6 +130,7 @@ function Home() {
         <p
           className="font-starcraft"
           style={{
+            userSelect: "none",
             position: "absolute",
             top: "24%",
             left: "29.5%",
@@ -131,6 +138,7 @@ function Home() {
             textShadow: "0 6px 0px rgba(0,0,0,0.9)",
             color: isHovered3 ? "#B5EE71" : "#60D632",
             zIndex: 2,
+            pointerEvents: "none",
           }}
         >
           <span style={{ color: "#B5EE71" }}>C</span>ertifications
@@ -200,6 +208,74 @@ function Home() {
           </div>
         </div>
 
+        {/* bottom left links */}
+        {/* bottom left links */}
+        {/* bottom left links */}
+        <div
+          style={{
+            position: "absolute",
+            top: "70%",
+            left: "7%",
+            width: "615px",
+            height: "615px",
+          }}
+        >
+          <ul
+            className="font-starcraft"
+            style={{
+              position: "absolute",
+              fontSize: "48px",
+              textShadow: "0 6px 0px rgba(0,0,0,0.9)",
+              color: isHovered3 ? "#B6EE71" : "#60D632",
+              zIndex: 2,
+              listStyle: "none",
+              padding: 0,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "50px",
+            }}
+          >
+            <li
+              onMouseEnter={() => setHoveredResume(true)}
+              onMouseLeave={() => setHoveredResume(false)}
+              style={{
+                color: isHoveredResume ? "#B6EE71" : "#60D632",
+                cursor: "pointer",
+              }}
+            >
+              <span style={{ color: "#B5EE71" }}>R</span>esume
+            </li>
+            <li
+              onMouseEnter={() => setHoveredGithub(true)}
+              onMouseLeave={() => setHoveredGithub(false)}
+              style={{
+                color: isHoveredGithub ? "#B6EE71" : "#60D632",
+                cursor: "pointer",
+              }}
+            >
+              <span style={{ color: "#B5EE71" }}>G</span>ithub
+            </li>
+            <li
+              onMouseEnter={() => setHoveredLinkedin(true)}
+              onMouseLeave={() => setHoveredLinkedin(false)}
+              style={{
+                color: isHoveredLinkedin ? "#B6EE71" : "#60D632",
+                cursor: "pointer",
+              }}
+            >
+              <span style={{ color: "#B5EE71" }}>L</span>inkedin
+            </li>
+            <li>
+              <span style={{ color: "#B5EE71" }}>9</span>16-248-3606
+            </li>
+            <li>
+              <span style={{ color: "#B5EE71" }}>S</span>tephenwb360@gmail.com
+            </li>
+          </ul>
+        </div>
+
+        {/* Boundaries for hovering / clicking */}
         <div
           onClick={() => navigate("/projects")}
           onMouseEnter={handleMouseEnter(setHovered1)}
@@ -209,7 +285,7 @@ function Home() {
             top: "40%",
             left: "20%",
             width: "700px",
-            height: "550px",
+            height: "400px",
             zIndex: 1,
             cursor: "pointer",
           }}
@@ -219,10 +295,10 @@ function Home() {
           onMouseLeave={handleMouseLeave(setHovered2)}
           style={{
             position: "absolute",
-            top: "75%",
-            left: "64%",
-            width: "300px",
-            height: "300px",
+            top: "65%",
+            left: "62%",
+            width: "470px",
+            height: "450px",
             zIndex: 1,
             cursor: "pointer",
           }}
@@ -235,8 +311,8 @@ function Home() {
             top: "0%",
             left: "20%",
             width: "800px",
-            height: "350px",
-            zIndex: 1,
+            height: "450px",
+            zIndex: 3,
             cursor: "pointer",
           }}
         />
