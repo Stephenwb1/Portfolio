@@ -47,6 +47,7 @@ function Home() {
         }}
       >
         <video
+          preload="auto"
           autoPlay
           loop
           muted
@@ -77,6 +78,7 @@ function Home() {
           <span style={{ color: "#B5EE71" }}>M</span>y projects
         </p>
         <video
+          preload="auto"
           autoPlay
           loop
           muted
@@ -111,6 +113,7 @@ function Home() {
           <span style={{ color: "#B5EE71" }}>C</span>ontact me
         </p>
         <video
+          preload="auto"
           autoPlay
           loop
           muted
@@ -146,6 +149,7 @@ function Home() {
           <span style={{ color: "#B5EE71" }}>C</span>ertifications
         </p>
         <video
+          preload="auto"
           autoPlay
           loop
           muted
