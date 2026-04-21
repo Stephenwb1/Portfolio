@@ -331,6 +331,9 @@ function Home() {
             }}
           />
           <div
+            onClick={() =>
+              (window.location.href = "mailto:stephenwb360@gmail.com")
+            }
             onMouseEnter={handleMouseEnter(setHovered2)}
             onMouseLeave={handleMouseLeave(setHovered2)}
             style={{
