@@ -344,6 +344,7 @@ function Home() {
             }}
           />
           <div
+            onClick={() => navigate("/certifications")}
             onMouseEnter={handleMouseEnter(setHovered3)}
             onMouseLeave={handleMouseLeave(setHovered3)}
             style={{

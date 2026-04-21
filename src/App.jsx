@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Certifications from "./pages/Certifications";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,13 @@ function App() {
         }}
       >
         <Projects />
+      </div>
+      <div
+        style={{
+          display: location.pathname === "/certifications" ? "block" : "none",
+        }}
+      >
+        <Certifications />
       </div>
     </>
   );
