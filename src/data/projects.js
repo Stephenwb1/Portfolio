@@ -1,11 +1,11 @@
 export const projects = [
     {
-        title: "CodeCompass",
-        url: "https://codecompass-eight.vercel.app/",
+        title: "JobMe",
+        url: "https://jobme-frontend.vercel.app",
         github: "Github",
-        github_url: "https://github.com/vinngo/codecompass",
-        youtubeId: "dQw4w9WgXcQ",
-        description: "Open-source AI-assisted\ncodebase comprehension\nand analysis tool"
+        github_url: "https://github.com/Stephenwb1/Application-Tracker",
+        youtubeId: "lQMZmvCAHek",
+        description: "A simple CRUD app that\ntracks jobs that I've\napplied to\n\nFrontend built with Vite\nand React, hosted on\nVercel \n\nBackend built with\nNode.js, Express,\nincludes JWT and Bcrypt\npassword hashing,\nconnected to MongoDB"
     },
     {
         title: "TCP chat app",
@@ -20,8 +20,8 @@ export const projects = [
         url: "https://codecompass-eight.vercel.app/",
         github: "Github",
         github_url: "https://github.com/vinngo/codecompass",
-        youtubeId: "dQw4w9WgXcQ",
-        description: "Open-source AI-assisted codebase\ncomprehension and analysis tool"
+        youtubeId: "6SL8XIIo4Z0",
+        description: "AI-assisted codebase comprehension and\nanalysis tool, built in a group of 6\n\nFrontend built with Next.js, Tailwind UI, Suapabse\nAuth, & Github OAuth\nBackend AI RAG pipeline with a Supabase DB"
     },
     {
         title: "Autonomous_Drone",
