@@ -28,7 +28,7 @@ export const projects = [
         url: "https://github.com/Stephenwb1/autonomous-drone",
         github: "Github",
         github_url: "https://github.com/Stephenwb1/autonomous-drone",
-        youtubeId: "dQw4w9WgXcQ",
-        description: "Fully autonomous drone that follows users around"
+        youtubeId: "ziTBCAsGQ9Y",
+        description: "Fully autonomous drone that follows users around **IN PROGRESS**"
     }
 ];
